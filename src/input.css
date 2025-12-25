@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+
+@layer components{
+    .card_heading{
+        @apply text-5xl text-center my-12 font-medium;
+    }
+    .card_header{
+        @apply flex md:flex-row flex-wrap gap-[2%] md:ml-[2%] gap-y-10;
+    }
+    .card{
+        @apply w-[70%]   max-h-[400px] md:max-h-[440px]   md:w-[30%] lg:w-[23%] ml-[15%] md:ml-0 box-border shadow-lg rounded-2xl overflow-hidden;
+    }
+    .card img{
+        @apply w-full h-[56%];
+    }
+    .card_text{
+        @apply mx-2 my-2  box-border;
+    }
+   .card_text h2{
+    @apply text-2xl font-bold;
+   }
+   .card_text p{
+    @apply text-[16px] py-2;
+   }
+    .card_btn_div{
+        @apply flex justify-end;
+    }
+    .card_btn{
+        @apply  px-3 py-2 bg-amber-500 uppercase rounded-[5px] text-white;
+    }
+}
