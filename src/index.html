@@ -10,35 +10,43 @@
 
 </head>
 <body>
+       <!--home -->
        <section>
                <div class="home_container">
                     <div class="flex justify-center items-center" >
                         <img src="img/logo.png " class="w-[30%] md:w-[22%] lg:w-[15%]  alt="">
                     </div>
-                    <div class="home_mid bg-[url(img/page-title.jpg)] bg-no-repeat bg-cover py-20">
+                    <div class="home_mid ">
                          <div class="flex flex-col items-center justify-center  ">
-                               <h1 class="text-3xl md:text-4xl  w-[35%] md:w-[28%] lg:w-[25%] text-white text-center leading-snug">Search Your Favorite Recipe</h1>
-                               <p  class="text-[18px] md:text-[20] w-[35%] mt-10 text-white text-center leading-snug "> A handful of simple ingredients typify the fresh , vibrant flavors of Greek cooking </p>
+                               <h1 class="home_h1">Search Your Favorite Recipe</h1>
+                               <p  class="home_p"> A handful of simple ingredients typify the fresh , vibrant flavors of Greek cooking </p>
                          </div>
                     </div>
-                    <div class="flex w-full md:w-[60%] md:ml-[20%] mt-10   "  >
-                        <input  type="text" class="flex-[0.90]  px-4 py-3 outline-none h-full border border-gray-400   " placeholder="Search....">
-                         <button class="flex-[0.10] bg-orange-500 py-3  h-full  cursor-pointer"> <i  class="fa-solid fa-magnifying-glass  text-white"></i> </button>
+                    <div class="flex w-full md:w-[60%] md:ml-[20%] mt-4  "  >
+                        <input id="inputText"  type="text"  placeholder="Search....">
+                         <button id="btn" class="flex-[0.10] "> <i  class="fa-solid fa-magnifying-glass  text-white"></i> </button>
                     </div>
                </div>
        </section>
 
+       <!--card -->
+        <section>
+                <div class="card_container">
+                    <h2 class="card_heading">Latest Recipes</h2>
+                    <div class="card_header ">
+                    </div>
+                </div>
+        </section>
 
-<section>
-        <div class="card_container">
-            <h2 class="card_heading">Latest Recipes</h2>
-            <div class="card_header ">
-                   
-                  <!--card end-->  
-            </div>
-        </div>
-</section>
-
+<!-- Modal -->
+<div id="cardModal" class="fixed inset-0 bg-black  flex items-center justify-center hidden z-50">
+    <div class="bg-white p-4 rounded-lg w-96 relative">
+        <span id="closeModal" class="absolute top-2 right-3 cursor-pointer text-3xl font-bold ">&times;</span>
+        <img id="modalImg" class="w-full h-48 object-cover rounded" src="">
+        <h2 id="modalTitle" class="text-2xl font-bold mt-2"></h2>
+        <p id="modalDetails" class="mt-2"></p>
+    </div>
+</div>
 
        <script src="script.js"></script>
 </body>
