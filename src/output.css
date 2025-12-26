@@ -318,6 +318,8 @@
     flex-wrap: wrap;
     gap: 2%;
     row-gap: calc(var(--spacing) * 10);
+    --tw-leading: var(--leading-snug);
+    line-height: var(--leading-snug);
     @media (width >= 48rem) {
       margin-left: 2%;
     }
@@ -338,7 +340,7 @@
       margin-left: calc(var(--spacing) * 0);
     }
     @media (width >= 48rem) {
-      max-height: 440px;
+      max-height: 400px;
     }
     @media (width >= 48rem) {
       width: 30%;
@@ -364,13 +366,14 @@
   }
   .card_text p {
     padding-block: calc(var(--spacing) * 2);
-    font-size: 16px;
+    font-size: 15px;
   }
   .card_btn_div {
     display: flex;
     justify-content: flex-end;
   }
   .card_btn {
+    cursor: pointer;
     border-radius: 5px;
     background-color: var(--color-amber-500);
     padding-inline: calc(var(--spacing) * 3);
